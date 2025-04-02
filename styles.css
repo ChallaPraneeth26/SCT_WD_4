@@ -1,0 +1,140 @@
+/* Background Gradient */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Soft Blue Gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Style */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+/* Header */
+h1 {
+    color: #34495e; /* Dark Grey-Blue */
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Task Input and Button */
+.task-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+select {
+    padding: 12px;
+    border: 1px solid #d1d8e0;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 14px;
+    background: #f8f9fa;
+    color: #34495e;
+}
+
+/* Add Task Button */
+.add-btn {
+    background-color: #5c7cfa; /* Soft Blue */
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+    background-color: #4263eb; /* Slightly Darker Blue */
+}
+
+/* Task List Container */
+.task-list-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Task List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    background: #f8f9fa; /* Light Grey */
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Task Priority Styles */
+.high {
+    border-left: 5px solid #ff6b6b; /* Soft Red */
+}
+
+.medium {
+    border-left: 5px solid #ffa502; /* Soft Orange */
+}
+
+.low {
+    border-left: 5px solid #2ed573; /* Soft Green */
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    color: #7f8c8d; /* Muted Grey */
+}
+
+/* Task Buttons */
+.task-buttons button {
+    margin-left: 5px;
+    background-color: #a4b0be; /* Soft Grey */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+}
+
+.task-buttons button:hover {
+    background-color: #576574; /* Darker Grey */
+}
+
+/* Delete Button */
+.task-buttons .delete-btn {
+    background-color: #ff4757; /* Soft Red */
+}
+
+.task-buttons .delete-btn:hover {
+    background-color: #e84118; /* Darker Red */
+}
+
+/* Edit Button */
+.task-buttons button.edit-btn {
+    background-color: #00a8ff; /* Soft Blue */
+}
+
+.task-buttons button.edit-btn:hover {
+    background-color: #0097e6; /* Darker Blue */
+}
